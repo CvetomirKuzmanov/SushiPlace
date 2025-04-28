@@ -1,12 +1,11 @@
-// src/app/page.tsx
-// Don't include "use client" here - keep this as a server component
+
 import HomeHero from "@/pages/Home/HomeHero";
 import { ProductService } from "@/services/ProductService";
 import { Product } from "@/types/Product";
+import "./globals.css"; 
+import ProductsProvider from "@/pages/Home/ProductProvider";
 
-// Set the correct revalidate option
 export const dynamic = "force-dynamic";
-// Use a simple number value for revalidate
 export const revalidate = 0;
 
 export default async function Home() {
@@ -17,5 +16,5 @@ export default async function Home() {
     console.error("Failed to fetch initial products:", error);
   }
   
-  return <HomeHero initialProducts={initialProducts} />;
+  return <ProductsProvider initialProducts={initialProducts} />
 }

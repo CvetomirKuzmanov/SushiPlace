@@ -1,0 +1,113 @@
+/* Footer.module.css */
+.footer {
+    background-color: var(--bg-dark);
+    color: white;
+    padding: 70px 0 20px;
+  }
+  
+  .footerGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+  
+  .footerLogo {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+  }
+  
+  .footerInfo p {
+    margin-bottom: 10px;
+    opacity: 0.8;
+  }
+  
+  .footerHours h4,
+  .footerLinks h4,
+  .footerNewsletter h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .footerHours h4::after,
+  .footerLinks h4::after,
+  .footerNewsletter h4::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: var(--primary-color);
+  }
+  
+  .footerHours p,
+  .footerNewsletter p {
+    margin-bottom: 10px;
+    opacity: 0.8;
+  }
+  
+  .footerLinks ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footerLinks a {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+  
+  .footerLinks a:hover {
+    opacity: 1;
+    color: var(--primary-color);
+  }
+  
+  .newsletterForm {
+    display: flex;
+    margin-top: 15px;
+  }
+  
+  .newsletterForm input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .newsletterForm button {
+    border-radius: 0 4px 4px 0;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  
+  .footerBottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0.6;
+    font-size: 14px;
+  }
+  
+  /* Media query for small screens */
+  @media (max-width: 576px) {
+    .footerGrid {
+      grid-template-columns: 1fr;
+    }
+    
+    .newsletterForm {
+      flex-direction: column;
+    }
+    
+    .newsletterForm input {
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    
+    .newsletterForm button {
+      border-radius: 4px;
+      width: 100%;
+    }
+  }
