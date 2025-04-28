@@ -4,12 +4,12 @@ import styles from './HomePage.module.css';
 import { Product as ProductType } from "@/types/Product";
 
 interface HomeListProps {
-  products: ProductType[];
+  products: ProductType[];  // products is always an array
   isLoading: boolean;
   error: string | null;
 }
 
-export default function HomeList({ products, isLoading, error }: HomeListProps) {
+export default function HomeList({ products = [], isLoading, error }: HomeListProps) {  // Default to an empty array
   if (isLoading) {
     return (
       <div className={styles.noProductsMessage}>

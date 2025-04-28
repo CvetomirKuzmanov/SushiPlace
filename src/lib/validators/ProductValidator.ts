@@ -6,7 +6,7 @@ export const validateProduct = (data: Product) => {
 
   if (!data.name || data.name.trim() === '') {
     errors.name = 'Name is required';
-  } else if (data.name.length > 255) {
+  } else if (data.name && data.name.length > 255) {
     errors.name = 'Name must be less than 255 characters long';
   }
 
@@ -18,7 +18,7 @@ export const validateProduct = (data: Product) => {
     errors.category = 'Category is required';
   }
 
-  if (data.price <= 0) {
+  if (typeof data.price !== 'number' || data.price <= 0) {
     errors.price = 'Price must be a positive number';
   }
 

@@ -12,6 +12,7 @@ export const ProductModel = {
       throw new Error(error.message);
     }
 
+    console.log("Fetched Products:", data);  // Log fetched data for debugging
     return data as Product[];
   },
 

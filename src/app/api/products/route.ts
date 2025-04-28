@@ -3,7 +3,7 @@ import { apiResponse } from "@/utils/api";
 import { handleError } from "@/utils/error";
 import { NextRequest } from "next/server";
 
-export async function GET(request: NextRequest): Promise<Response> {
+export async function GET(): Promise<Response> {
   try {
     const products = await ProductService.getAllProducts();
     return apiResponse.success(products);
