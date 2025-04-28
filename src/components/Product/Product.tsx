@@ -1,7 +1,6 @@
 'use client'
 
 import styles from './DishCard.module.css';
-import { Product } from '@/types/Product';
 
 const ProductCard = () => {
     return (

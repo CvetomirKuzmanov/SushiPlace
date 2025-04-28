@@ -1,7 +1,7 @@
 /* Home Module Styles */
 .hero {
     position: relative;
-    height: 600px;
+    height: 800px; /* Was 600px */
     margin-top: 70px;
     overflow: hidden;
 }
