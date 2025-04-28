@@ -24,7 +24,7 @@ export default function HomeHero({ initialProducts = [] }: HomeHeroProps) {
     <section className={styles.hero}>
       <div className={styles.heroImage}>
         <img
-          src="./vecteezy_top-view-of-sushi-set-and-chopsticks-on-black-background_10721385.jpg"
+          src="./"
           alt="Sushi background"
         />
       </div>
