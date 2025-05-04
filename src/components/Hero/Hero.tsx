@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <div className="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
     <div className="absolute inset-0">
-      <Image fill  src="/sushi2.jpg" 
+      <Image fill  src="/background.jpg" 
           alt="Background Image" 
           className="object-cover object-center w-full h-full" />
       <div className="absolute inset-0 bg-black opacity-50"></div>
