@@ -1,11 +1,9 @@
 'use client'
 
 import React from 'react';
-import styles from './Footer.module.css';
 
 export default function  FooterNew () {
   return (
-   // <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <footer className="bg-gray-800 text-white py-8">
         <div className="container mx-auto px-4">

@@ -1,7 +1,9 @@
-import LoginForm from '@/pages/Login/LoginForm'
- 
+import LoginForm from "@/pages/Login/LoginForm";
+
 export default function LoginPage() {
-    <>
-        <LoginForm />
-    </>
+    return (
+        <>
+            <LoginForm />
+        </>
+    );
 }
