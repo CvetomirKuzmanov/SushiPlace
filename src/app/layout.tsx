@@ -2,6 +2,13 @@ import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import type { Metadata } from "next";
 import './globals.css'
+import NotFound from "@/components/NotFound";
+import Hero from "@/components/Hero/Hero";
+import NavBar from "@/components/NavBar/NavBar";
+import FooterNew from "@/components/FooterNew/FooterNew";
+import NewNavBar from "@/components/NavBar/NewNavBar";
+import FooterNew2 from "@/components/FooterNew/FooterNew2";
+import Login from "@/components/Login/Login";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,9 +23,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
-        {children}
-        <Footer />
+         {/* <Header />  */}
+         {/* <NotFound />  */}
+         <NewNavBar />
+        {children} 
+         <FooterNew2 /> 
+
+        {/* <Footer />  */}
       </body>
     </html>
   );

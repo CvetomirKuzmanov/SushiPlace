@@ -8,7 +8,7 @@ export default function HomeHero () {
         <section className={styles.hero}>
           <div className={styles.heroImage}>
             <img
-              src="/background.jpg"
+              src="/sushi2.jpg"
               alt="Sushi background"
             />
           </div>

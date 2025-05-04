@@ -1,4 +1,3 @@
-
 import { ProductService } from "@/services/ProductService";
 import { Product } from "@/types/Product";
 import "./globals.css"; 
